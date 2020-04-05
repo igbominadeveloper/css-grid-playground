@@ -1,0 +1,33 @@
+.container {
+  max-width: 800px;
+  margin: 4rem auto 0;
+  height: 300px;
+  display: grid;
+  grid-template-columns: 60px 60px auto;
+  grid-template-rows: 50px auto 50px;
+  gap: 1em 1em;
+  grid-template-areas:
+    "nav header header"
+    "nav main main"
+    "nav footer footer";
+}
+
+header {
+  grid-area: header;
+  background: green;
+}
+
+nav {
+  grid-area: nav;
+  background: cyan;
+}
+
+main {
+  grid-area: main;
+  background: grey;
+}
+
+footer {
+  grid-area: footer;
+  background: teal;
+}
