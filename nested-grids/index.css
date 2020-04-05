@@ -1,0 +1,32 @@
+.container {
+  max-width: 60vw;
+  height: 300px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: 30px 60px auto;
+  gap: 1em;
+  margin: 4rem auto 0;
+}
+
+.box {
+  background: grey;
+}
+
+.a {
+  grid-column: 1 / span 3;
+}
+
+.h {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+
+.i {
+  grid-column: 2 / span 2;
+}
+
+.child {
+  background: white;
+}
