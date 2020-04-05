@@ -1,0 +1,27 @@
+.container {
+  max-width: 400px;
+  margin: 4rem auto 0;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 1em;
+}
+
+.item {
+  border: 2px solid teal;
+}
+
+.item:first-child {
+  background: wheat;
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+}
+
+.item:nth-child(8) {
+  grid-column: 1 / 5;
+}
+
+.item:nth-child(6) {
+  grid-row: 2 / 4;
+  grid-column: 1 / 3;
+}
